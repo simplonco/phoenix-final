@@ -13,3 +13,493 @@
  *= require_tree .
  *= require_self
  */
+
+@charset "utf-8";
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------- fin reset css ----------*/
+
+body {
+	
+	padding: 0; 
+	margin: 0;
+	font-family:'Open Sans', Arial, sans-serif;
+	}
+	
+a {
+	text-decoration:none;
+	color:black;
+	}
+
+.block_texte h1{
+	text-align:center;
+	font-size:30px;
+}
+
+.block_texte h3{
+	margin-top:10px;
+	text-align:center;
+	font-size:25px;
+	padding-bottom:10px;
+	border-bottom:1px solid black;
+}
+
+.block_texte p{
+	margin-top:10px;
+	text-align:justify;
+	line-height:20px;
+}
+
+/*--------------- debut header ---------------*/
+
+header{
+	
+	display:block;
+	width:100%;
+	height:70px;
+	background-color:white;
+	position:fixed;
+	z-index:1;
+	}	
+
+.logo{
+	display:inline-block;
+	position:absolute;
+	top:10px;
+	left:1%;
+	width:auto;	
+	z-index:1
+	}
+	
+.logo img{
+	height:50px;
+	width:auto;
+	}
+
+.title{
+	position:absolute;
+	display:inline-block;
+	width:auto;
+	height:70px;
+	left:7%;
+	top:22px;
+	font-size:30px;
+	}
+	
+.bouton_nav{
+	display:none;
+	position:fixed;
+	top:0;
+	right:0;
+	width:110px;
+	height:50px;
+	list-style: none none;
+	
+	}
+	
+#bouton_nav{
+	display:block;
+	position:absolute;
+	margin-left:62px;
+	margin-top:1.4%;
+	width:45px;
+	height:auto;
+	}
+
+	
+		/*--------------- debut nav ---------------*/
+		
+nav{
+	position:absolute;
+	top:0;
+	margin:auto;
+	width:100%;
+	height:70px;
+	text-align:center;
+	}
+
+.navigation{
+	display:inline-block;
+	width:auto;
+	font-size:20px;
+	margin-top:24px;
+	margin-left:30px;
+	}	
+	
+.navigation:first-child{
+	margin-left:0;
+	}
+
+		/*--------------- fin nav ---------------*/
+		
+/*--------------- fin header ---------------*/
+
+		/*--------------- debut bouton_back_top ---------------*/	
+		
+.back_top{
+	display:none;
+	position:fixed;
+	top:14px;
+	width:3%;
+	height:auto;
+	right:20px;
+	z-index:1;
+	}
+	
+	.back-top-visible{
+	display:block;
+}	
+
+#bouton_back_top{
+	display:block;
+	width:100%;
+	}
+
+#bouton_back_top img{
+	width:100%;
+	height:auto;
+	}
+
+.back_top a {
+	opacity:0.6;
+	}
+
+.back_top a:hover{
+	opacity:1;
+	}
+	
+.slide{
+	position:relative;
+	width:100%;
+	height:100vh;
+	margin:0;
+	}
+
+		/*--------------- fin bouton_back_top ---------------*/
+
+/*--------------- debut slide center ---------------*/
+
+.slide.center{
+	display:block;
+	background-image:url(images/fond_slide_center.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+
+		/*--------------- debut bouton_slide center ---------------*/
+		
+.bouton_slide_center{
+	display:block;
+	position:absolute;
+	left:50%;
+	bottom:40px;
+	width:3%;
+	height:auto;
+	margin-left:-1.5%;
+	}
+
+.bouton_slide_center img{
+	width:100%;
+	height:auto;
+	}
+
+.bouton_slide_center a {
+	opacity:0.6;
+	}
+
+.bouton_slide_center a:hover{
+	opacity:1;
+	}
+
+		/*--------------- fin bouton_slide center ---------------*/
+		
+.block_texte{
+	display:block;
+	position:relative;
+	top:25%;
+	width:40%;
+	height:auto;
+	padding:20px;
+	border-radius:10px;
+	}
+
+.block_texte.center {
+	margin:0 auto;
+	}
+	
+.block_texte.bg_white{
+	background-color:rgba(255, 255, 255, 0.5);
+	}
+
+/*--------------- fin slide center ---------------*/
+
+/*--------------- debut slide left ---------------*/
+
+.slide.left{
+	display:block;
+	background-color:#cccccc;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+
+.block_texte.left {
+	margin-left:7%;
+	}
+
+.block_texte.left p {
+	text-align:justify;
+	}
+
+.block_texte.left h3 {
+	padding-bottom:10px;
+	border-bottom:1px solid black;
+	}
+
+.block_texte.bg_black{
+	background-color:rgba(0, 0, 0, 0.5);
+	}
+	
+/*--------------- fin slide left ---------------*/
+
+/*--------------- debut slide right ---------------*/
+
+.slide.right{
+	display:block;
+	background-image:url(images/fond_slide_right.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+
+.block_texte.right {
+	float:right;
+	right:0;
+	margin-right:7%;
+	}
+
+.block_texte.right p {
+	text-align:justify;
+	}
+
+.block_texte.right h3 {
+	padding-bottom:10px;
+	border-bottom:1px solid black;
+	}
+	
+/*--------------- fin slide right ---------------*/
+
+/*--------------- responsive Large devices Desktops ---------------*/
+
+@media only screen and (max-width: 1200px) {
+	 
+	}
+
+/*--------------- responsive tablette ---------------*/
+
+@media only screen and (max-width: 992px) {
+	
+ 	.logo{
+	display:inline-block;
+	position:absolute;
+	top:17px;
+	left:1%;
+	width:auto;	
+	z-index:1
+	}
+	
+	.logo img{
+	height:35px;
+	width:auto;
+	}
+	
+	.title{
+	position:absolute;
+	left:14%;
+	top:-3px;
+	width:80px;
+	margin-left:-40px;
+	text-align:center;
+	font-size:25px;
+	}
+	
+	.back_top{
+	display:none;
+	position:fixed;
+	top:16px;
+	width:5%;
+	height:auto;
+	right:20px;
+	z-index:1;
+	}
+	
+	.bouton_slide_center{
+	display:block;
+	position:absolute;
+	left:50%;
+	bottom:40px;
+	width:5%;
+	height:auto;
+	margin-left:-2.5%;
+	}
+
+	}
+ 
+/*--------------- responsive Small devices Tablets ---------------*/
+
+ 
+/*--------------- responsive Extra small devices Phones ---------------*/
+
+@media only screen and (max-width: 768px) {
+	
+	header{
+	
+	display:block;
+	width:100%;
+	height:50px;
+	background-color:white;
+	position:fixed;
+	z-index:1;
+	}	
+
+	.logo{
+	display:inline-block;
+	position:absolute;
+	top:6.5px;
+	left:10px;
+	width:auto;	
+	z-index:1
+	}
+	
+	.logo img{
+	height:35px;
+	width:auto;
+	}
+
+	.title{
+	position:absolute;
+	left:50%;
+	top:-12px;
+	width:80px;
+	margin-left:-40px;
+	text-align:center;
+	font-size:25px;
+	}
+
+	nav{
+	display:none;
+	position:absolute;
+	top:70px;
+	right:0;
+	margin-top:-20px;
+	width:auto;
+	height:auto;
+	text-align:left;
+	background-color:white;
+	}
+
+	.navigation{
+	display:block;
+	width:auto;
+	font-size:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:0;
+	padding:10px;
+	
+	}	
+	
+	.navigation:first-child{
+	margin-left:0;
+	}
+
+	.bouton_nav{
+	display:block;
+	margin-top:0.7%;
+	}
+
+	.bouton_slide_center{
+	display:block;
+	position:absolute;
+	left:50%;
+	bottom:40px;
+	width:10%;
+	height:auto;
+	margin-left:-5%;
+	}
+
+
+	.back_top{
+	display:none;
+	}
+
+	.block_texte{
+	display:block;
+	position:relative;
+	top:15%;
+	width:220px;
+	height:60%;
+	padding:20px;
+	border-radius:10px;
+	}
+	
+	.block_texte > p {
+	width:200px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+	}

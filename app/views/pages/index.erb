@@ -1,0 +1,49 @@
+<header>
+	<div class="logo">
+		<a href="#slide_0">
+			<%= image_tag("logo.png") %>
+		</a>
+	</div>
+
+	<div class="title">
+		<p>Phoenix</p>
+	</div>
+
+	<nav>		
+		<div class="navigation">
+			<% @pages.each do |page| %>
+				<%= link_to page.title, "#slide_#{page.position}" %>
+			<% end %>
+		</div>	
+	</nav>
+
+	<div class="back_top">	
+		<a id="bouton_back_top" href="#slide_0">
+			<%= image_tag("bouton_back_top_black.png") %>
+		</a>
+	</div>
+				
+	<div class="bouton_nav">
+		<a id="bouton_nav" href="#">
+			<%= image_tag("bouton_nav.png") %>
+		</a>
+	</div>
+</header>
+
+<% @pages.each do |page| %>
+	<div class="slide <%= page.text_align %>" id="slide_<%= page.position %>" style="background-image:url(<%= page.image.url %>);">
+	   
+		<div class="bouton_slide_center"> 
+			<a href="#slide_<%= page.position += 1 %>">
+				<%= image_tag("bouton_slide_center.png") %>
+			</a>
+		</div>
+		
+		<div class="block_texte <%= page.text_align %> <%= page.block_color %>">
+			<h1><%= page.title %></h1>
+		    <h3><%= page.subtitle %></h3>
+		    <p style="color:<%= page.color %>;"><%= page.body %></p>
+		</div>
+	
+	</div>
+<% end %>
