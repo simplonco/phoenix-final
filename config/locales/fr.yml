@@ -2,11 +2,36 @@ fr:
   time:
     formats:
       long: "%d-%m-%Y %H:%M"
+  activerecord:
+    models:
+      admin_user:
+        one: "Admin Utilisateur"
+        other: "Admin Utilisateurs"
+      attributes:
+        admin_user:
+          current_sign_in_at: "Dernière activitée"
+          sign_in_count: "Enregistré"
+          created_at: "Crée le"
+        option:
+          option_key: "Option clé"
+          option_value: "Option valeur"
+          created_at: "Crée le"
+          updated_at: "Edité le"
+        page:
+          name: "Nom"
+          slug: "Nom normé"
+          title: "Titre"
+          subtitle: "Sous-titre"
+          body: "Texte"
+          color: "Couleur texte"
+          text_align: "Alignement texte"
+          block_color: "Block couleur"
   active_admin:
     dashboard: "Tableau de bord"
     dashboard_welcome:
       welcome: "Bienvenue dans Active Admin. Ceci est la page par défaut."
       call_to_action: "Pour ajouter des sections au tableau de bord, consultez 'app/admin/dashboard.rb'"
+    admin_users: "Admin Utilisateurs"
     view: "Voir"
     edit: "Modifier"
     delete: "Supprimer"

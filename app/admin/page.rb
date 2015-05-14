@@ -24,14 +24,14 @@ index do
     selectable_column
     id_column
     column :position
-    column :name
-    column :slug
-    column :title
-    column :subtitle
-    column :body
-    column :color
-    column :text_align
-    column :block_color
+    column I18n.t('activerecord.models.attributes.page.name'), :name
+    column I18n.t('activerecord.models.attributes.page.slug'), :slug
+    column I18n.t('activerecord.models.attributes.page.title'), :title
+    column I18n.t('activerecord.models.attributes.page.subtitle'), :subtitle
+    column I18n.t('activerecord.models.attributes.page.body'), :body
+    column I18n.t('activerecord.models.attributes.page.color'), :color
+    column I18n.t('activerecord.models.attributes.page.text_align'), :text_align
+    column I18n.t('activerecord.models.attributes.page.block_color'), :block_color
     actions
   end
 
