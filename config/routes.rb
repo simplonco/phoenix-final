@@ -58,4 +58,6 @@ Rails.application.routes.draw do
 
   resources :pages
   root "pages#index"
+
+  get "/maintenance", to: "options#maintenance"
 end

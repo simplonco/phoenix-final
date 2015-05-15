@@ -25,8 +25,8 @@ index do
 
 form do |f|
     f.inputs "Googleanalytic Details" do
-      f.input :option_key
-      f.input :option_value
+      f.input :option_key, label: I18n.t('option_key'), placeholder: "Entrer googleanalytic ou modemaintenance"
+      f.input :option_value, label: I18n.t('option_value'), placeholder: "Entrer un UA ID pour googleanalytic soit la valeur 0 (off) ou 1 (on) pour modemaintenance"
     end
     f.actions
   end  

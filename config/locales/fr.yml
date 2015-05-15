@@ -2,6 +2,19 @@ fr:
   time:
     formats:
       long: "%d-%m-%Y %H:%M"
+  option_key: "Option clé"
+  option_value: "Option valeur"
+  created_at: "Crée le"
+  updated_at: "Edité le"
+  position: "Position (obligatoire)"
+  name: "Nom (facultatif)"
+  slug: "Nom normé"
+  title: "Titre (obligatoire)"
+  subtitle: "Sous-titre (facultatif)"
+  body: "Texte (facultatif)"
+  color: "Couleur texte (choisissez une couleur)"
+  text_align: "Alignement texte (choisissez un alignement)"
+  block_color: "Block couleur (choisissez une couleur)"
   activerecord:
     models:
       admin_user:

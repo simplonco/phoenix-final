@@ -50,14 +50,14 @@ controller do
 
 form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Page Details" do
-      f.input :position
-      f.input :name
-      f.input :title
-      f.input :subtitle
-      f.input :body
-      f.input :color, input_html: { class: "colorpicker" }
-      f.input :text_align, :as => :radio, :collection => ["left", "center", "right"]
-      f.input :block_color, :as => :radio, :collection => ["bg_white", "bg_black"]
+      f.input :position, label: I18n.t('position'), placeholder: "Entrer une position à partir du nombre 0"
+      f.input :name, label: I18n.t('name'), placeholder: "Entrer un nom"
+      f.input :title, label: I18n.t('title'), placeholder: "Entrer un titre"
+      f.input :subtitle, label: I18n.t('subtitle'), placeholder: "Entrer un sous-titre"
+      f.input :body, label: I18n.t('body'), placeholder: "Entrer votre texte"
+      f.input :color, input_html: { class: "colorpicker" }, label: I18n.t('color')
+      f.input :text_align, :as => :radio, :collection => ["left", "center", "right"], label: I18n.t('text_align')
+      f.input :block_color, :as => :radio, :collection => ["bg_white", "bg_black"], label: I18n.t('block_color')
       f.file_field :image
     end
     f.actions
