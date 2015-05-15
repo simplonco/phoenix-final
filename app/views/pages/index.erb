@@ -30,15 +30,15 @@
 	</div>
 </header>
 
-<% @pages.each do |page| %>
-	<div class="slide <%= page.text_align %>" id="slide_<%= page.position %>" style="background-image:url(<%= page.image.url %>);">
-	   
-		<div class="bouton_slide_center"> 
-			<a href="#slide_<%= page.position += 1 %>">
-				<%= image_tag("bouton_slide_center.png") %>
-			</a>
-		</div>
-		
+<% @pages.each_with_index do |page, i| %>
+	<div class="slide <%= page.text_align %>" id="slide_<%= i %>" style="background-image:url(<%= page.image.url %>);">
+	   <% unless @pages.last == page %>
+			<div class="bouton_slide_center"> 
+				<a href="#slide_<%= i + 1 %>">
+					<%= image_tag("bouton_slide_center.png") %>
+				</a>
+			</div>
+		<% end %>
 		<div class="block_texte <%= page.text_align %> <%= page.block_color %>">
 			<h1><%= page.title %></h1>
 		    <h3><%= page.subtitle %></h3>

@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
   def check_maintenance
     if Option.all.where(option_key: "modemaintenance").take.option_value == "1" && request.path != maintenance_path && request.path !~ /admin?/
-      redirect_to maintenance_path and return
+      redirect_to maintenance_path
     end
   end
 end
