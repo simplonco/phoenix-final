@@ -6,7 +6,7 @@
 #
 default: &default
   adapter: postgresql
-  encoding: unicode
+  encoding: UTF8
   template: template0
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
