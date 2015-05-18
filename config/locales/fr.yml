@@ -124,6 +124,12 @@ fr:
       errors:
         empty_text: "Le commentaire n'a pas été enregistré puisque le texte était vide."
     devise:
+      failure:
+        admin_user:
+          unauthenficated: "Authentification"
+      sessions:
+        admin_user:
+          signed_in: "Enregistré"
       username:
         title: "Nom d'utilisateur"
       email:
