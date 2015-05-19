@@ -2,11 +2,11 @@
 #   gem install sqlite3
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
+#   gem 'sqlite'
 #
 default: &default
   adapter: postgresql
-  encoding: UTF8
+  encoding: unicode
   template: template0
   #essayer avec SQL_ASCII
   # For details on connection pooling, see rails configuration guide
@@ -19,6 +19,8 @@ production:
   host: localhost
   username: hosting-db
   password:
+  encoding: unicode
+  pool: 5
 
 development:
   <<: *default
