@@ -37,7 +37,7 @@ index do
 
 controller do
     def create
-      
+
       @page = Page.new(permitted_params[:page])
 
       if @page.save
@@ -50,7 +50,7 @@ controller do
 
 form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Page Details" do
-      f.input :position, label: I18n.t('position'), placeholder: "Entrer une position à partir du nombre 0"
+      f.input :position, label: I18n.t('position'), placeholder: "Entrer une position a partir du nombre 0"
       f.input :name, label: I18n.t('name'), placeholder: "Entrer un nom"
       f.input :title, label: I18n.t('title'), placeholder: "Entrer un titre"
       f.input :subtitle, label: I18n.t('subtitle'), placeholder: "Entrer un sous-titre"
