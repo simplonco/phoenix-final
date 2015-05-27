@@ -123,43 +123,43 @@ fr:
       title_content: "Commentaires (%{count})"
       errors:
         empty_text: "Le commentaire n'a pas été enregistré puisque le texte était vide."
-    devise:
-      failure:
-        admin_user:
-          unauthenficated: "Authentification"
-      sessions:
-        admin_user:
-          signed_in: "Enregistré"
-      username:
-        title: "Nom d'utilisateur"
-      email:
-        title: "Email"
-      subdomain:
-        title: "Sous-domaine"
-      password:
-        title: "Mot de passe"
-      login:
-        title: "Connexion"
-        remember_me: "Garder ma session ouverte"
-        submit: "Se connecter"
-      reset_password:
-        title: "Vous avez oublié votre mot de passe ?"
-        submit: "Réinitialiser mon mot de passe"
-      change_password:
-        title: "Changez votre mot de passe"
-        submit: "Changer mon mot de passe"
-      resend_confirmation_instructions:
-        title: "Renvoyer les instructions de confirmation"
-        submit: "Renvoyer les instructions de confirmation"
-      links:
-        sign_in: "Connectez-vous"
-        forgot_your_password: "Vous avez oublié votre mot de passe ?"
-        sign_in_with_omniauth_provider: "Connectez-vous avec %{provider}"
-    access_denied:
-      message: "Vous n'êtes pas autorisé à exécuter cette action"
-    index_list:
-      table: "Tableau"
-      block: "Liste"
-      grid: "Grille"
-      blog: "Blog"
-      sortable: "Réorganiser"
+  devise:
+    failure:
+      admin_user:
+        unauthenticated: "Non Authentifié"
+    sessions:
+      admin_user:
+        signed_in: "Enregistré"
+    username:
+      title: "Nom d'utilisateur"
+    email:
+      title: "Email"
+    subdomain:
+      title: "Sous-domaine"
+    password:
+      title: "Mot de passe"
+    login:
+      title: "Connexion"
+      remember_me: "Garder ma session ouverte"
+      submit: "Se connecter"
+    reset_password:
+      title: "Vous avez oublié votre mot de passe ?"
+      submit: "Réinitialiser mon mot de passe"
+    change_password:
+      title: "Changez votre mot de passe"
+      submit: "Changer mon mot de passe"
+    resend_confirmation_instructions:
+      title: "Renvoyer les instructions de confirmation"
+      submit: "Renvoyer les instructions de confirmation"
+    links:
+      sign_in: "Connectez-vous"
+      forgot_your_password: "Vous avez oublié votre mot de passe ?"
+      sign_in_with_omniauth_provider: "Connectez-vous avec %{provider}"
+  access_denied:
+    message: "Vous n'êtes pas autorisé à exécuter cette action"
+  index_list:
+    table: "Tableau"
+    block: "Liste"
+    grid: "Grille"
+    blog: "Blog"
+    sortable: "Réorganiser"

@@ -219,6 +219,7 @@ nav{
 	
 .slide{
 	position:relative;
+	background-color: #cccccc;
 	width:100%;
 	height:100vh;
 	margin:0;
@@ -230,7 +231,6 @@ nav{
 
 .slide.center{
 	display:block;
-	background-image:url(images/fond_slide_center.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -288,7 +288,6 @@ nav{
 
 .slide.left{
 	display:block;
-	background-color:#cccccc;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -318,7 +317,6 @@ nav{
 
 .slide.right{
 	display:block;
-	background-image:url(images/fond_slide_right.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

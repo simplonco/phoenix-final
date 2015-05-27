@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150513125408) do
+ActiveRecord::Schema.define(version: 20150514123942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,8 +40,8 @@ ActiveRecord::Schema.define(version: 20150513125408) do
     t.integer  "sign_in_count",          default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.inet     "current_sign_in_ip"
-    t.inet     "last_sign_in_ip"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -49,51 +49,29 @@ ActiveRecord::Schema.define(version: 20150513125408) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
-  create_table "admin_utilisateurs", force: :cascade do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.inet     "current_sign_in_ip"
-    t.inet     "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "admin_utilisateurs", ["email"], name: "index_admin_utilisateurs_on_email", unique: true, using: :btree
-  add_index "admin_utilisateurs", ["reset_password_token"], name: "index_admin_utilisateurs_on_reset_password_token", unique: true, using: :btree
-
-  create_table "googleanalytics", force: :cascade do |t|
-    t.string   "url_site"
-    t.string   "ua_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.boolean  "maintenance"
-  end
-
   create_table "options", force: :cascade do |t|
-    t.string "option_cle"
-    t.string "option_valeur"
+    t.string   "option_key"
+    t.string   "option_value"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "pages", force: :cascade do |t|
-    t.string   "titre"
-    t.text     "texte"
-    t.string   "sous_titre"
-    t.string   "nom"
-    t.string   "nom_norme"
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.integer  "position"
+    t.string   "name"
+    t.string   "subtitle"
+    t.string   "color"
+    t.string   "text_align"
+    t.string   "block_color"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.string   "alignement_texte"
-    t.string   "couleur_texte"
-    t.string   "couleur_block"
+    t.string   "slug"
   end
 
 end
