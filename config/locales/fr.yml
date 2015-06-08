@@ -12,9 +12,10 @@ fr:
   title: "Titre (obligatoire)"
   subtitle: "Sous-titre (facultatif)"
   body: "Texte (facultatif)"
-  color: "Couleur texte (choisissez une couleur)"
+  color: "Couleur du texte (choisissez une couleur)"
   text_align: "Alignement texte (choisissez un alignement)"
-  block_color: "Block couleur (choisissez une couleur)"
+  block_color: "Couleur de fond du block texte (choisissez une couleur)"
+  image: "Image/Photo (selectionnez une image/photo)"
   activerecord:
     models:
       admin_user:
@@ -36,9 +37,9 @@ fr:
           title: "Titre"
           subtitle: "Sous-titre"
           body: "Texte"
-          color: "Couleur texte"
+          color: "Couleur du texte"
           text_align: "Alignement texte"
-          block_color: "Block couleur"
+          block_color: "Couleur de fond du block texte"
   active_admin:
     dashboard: "Tableau de bord"
     dashboard_welcome:
