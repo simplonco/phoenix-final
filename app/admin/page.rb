@@ -58,7 +58,7 @@ form :html => { :enctype => "multipart/form-data" } do |f|
       f.input :color, input_html: { class: "colorpicker" }, label: I18n.t('color')
       f.input :text_align, :as => :radio, :collection => ["left", "center", "right"], label: I18n.t('text_align')
       f.input :block_color, :as => :radio, :collection => ["bg_white", "bg_black"], label: I18n.t('block_color')
-      f.file_field :image
+      f.input :image, :as => :file, label: I18n.t('image')
     end
     f.actions
   end

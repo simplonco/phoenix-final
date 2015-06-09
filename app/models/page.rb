@@ -12,4 +12,16 @@ class Page < ActiveRecord::Base
 	 	self.slug = name.parameterize
 	 end
 
+	 before_save :default_values
+
+	  def default_values
+	    if self.text_align.blank? == true 
+	    	self.text_align ||= "left"
+	    end
+	    
+	    if self.block_color.blank? == true 
+	    	self.block_color ||= "bg_white"
+	    end
+	  end
+
 end
