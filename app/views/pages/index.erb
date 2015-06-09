@@ -10,11 +10,11 @@
 	</div>
 
 	<nav>		
-		<div class="navigation">
-			<% @pages.each do |page| %>
+		<% @pages.each do |page| %>
+			<div class="navigation">
 				<%= link_to page.title, "#slide_#{page.position}" %>
-			<% end %>
-		</div>	
+			</div>	
+		<% end %>
 	</nav>
 
 	<div class="back_top">	

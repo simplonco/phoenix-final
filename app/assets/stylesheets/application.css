@@ -74,9 +74,10 @@ body {
 	margin: 0;
 	font-family:'Open Sans', Arial, sans-serif;
 	}
-	
-a {
-	text-decoration:none;
+
+a, a:link, a:visited {
+	cursor:pointer !important;
+	text-decoration:none !important;
 	color:black;
 	}
 
@@ -211,6 +212,7 @@ nav{
 
 .back_top a {
 	opacity:0.6;
+	cursor:pointer;
 	}
 
 .back_top a:hover{
@@ -270,8 +272,10 @@ nav{
 	top:25%;
 	width:40%;
 	height:auto;
+	max-height:430px;
 	padding:20px;
 	border-radius:10px;
+	overflow:hidden;
 	}
 
 .block_texte.center {
@@ -281,6 +285,11 @@ nav{
 .block_texte.bg_white{
 	background-color:rgba(255, 255, 255, 0.5);
 	}
+.block_texte.bg_white h1,.block_texte.bg_white h3 {
+	color:black;
+}
+
+
 
 /*--------------- fin slide center ---------------*/
 
@@ -311,6 +320,15 @@ nav{
 	background-color:rgba(0, 0, 0, 0.5);
 	}
 	
+.block_texte.bg_black h1{
+	color:white;
+}
+
+.block_texte.bg_black h3 {
+	border-bottom:1px solid white;
+	color:white;
+}
+
 /*--------------- fin slide left ---------------*/
 
 /*--------------- debut slide right ---------------*/
@@ -335,7 +353,6 @@ nav{
 
 .block_texte.right h3 {
 	padding-bottom:10px;
-	border-bottom:1px solid black;
 	}
 	
 /*--------------- fin slide right ---------------*/
@@ -500,4 +517,4 @@ nav{
 	margin-right:auto;
 	}
 	
-	}
+	
