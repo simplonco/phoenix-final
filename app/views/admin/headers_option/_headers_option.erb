@@ -1,0 +1,37 @@
+<form action="/options" method="post">
+<%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+Title Header:<br>
+<input type="text" name="title_header" value="">
+<br><br>
+Texte Footer:<br>
+<input type="text" name="text_footer" value="">
+<br><br>
+Twitter:<br>
+<input type="text" name="link_twitter" value="">
+<br><br>
+Linkedin:<br>
+<input type="text" name="link_linkedin" value="">
+<br><br>
+Youtube:<br>
+<input type="text" name="link_youtube" value="">
+<br><br>
+ID Analytics:<br>
+<input type="text" name="id_analytics" value="">
+<br><br>
+Logo:<br>
+<input type="file" name="img_header" value="">
+<br><br>
+Couleur de fond du header:<br>
+<input type="color" name="bg_header" value="">
+<br><br>
+Couleur du texte du header:<br>
+<input type="color" name="color_header" value="">
+<br><br>
+Couleur de fond du footer:<br>
+<input type="color" name="bg_footer" value="">
+<br><br>
+Couleur du texte du footer:<br>
+<input type="color" name="color_footer" value="">
+<br><br>
+<input type="submit" value="Valider">
+</form>
