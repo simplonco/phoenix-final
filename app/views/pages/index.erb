@@ -57,15 +57,15 @@
 		</li>
 		
 		<li class="logo">
-			<%= link_to "", "http://#{Option.all.where(option_key: "link_linkedin").take.try(:option_value)}", class: "facebook" %>
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_facebook").take.try(:option_value)}", class: "facebook" %>
 		</li>
 		
 		<li class="logo">
-			<%= link_to "", "http://#{Option.all.where(option_key: "link_youtube").take.try(:option_value)}", class: "linkedin" %>
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_linkedin").take.try(:option_value)}", class: "linkedin" %>
 		</li>
 		
 		<li class="logo">
-			<%= link_to "", "http://#{Option.all.where(option_key: "id_analytics").take.try(:option_value)}", class: "google-plus" %>
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_google_plus").take.try(:option_value)}", class: "google-plus" %>
 		</li>
 	</ul>
 	
