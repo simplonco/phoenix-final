@@ -13,11 +13,11 @@ default: &default
 
 development:
   <<: *default
-  database: phoenix_development
+  database: phoenix
   adapter: postgresql
   host: localhost
-  username: phoenix
-  password: the_phoenix
+  username: postgres
+  password: root
 
 test:
   <<: *default
