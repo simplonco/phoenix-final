@@ -50,8 +50,6 @@
 
 <footer style="background-color:<%= Option.all.where(option_key: "bg_footer").take.try(:option_value) %>;
 	color:<%= Option.all.where(option_key: "color_footer").take.try(:option_value) %>;">
-	<div class="copyright"><%= Option.all.where(option_key: "text_footer").take.try(:option_value) %></div>
-</footer>
 
 	<ul class="social-logo">
 		<li class="logo">
@@ -71,5 +69,5 @@
 		</li>
 	</ul>
 	
-	<div class="copyright">&copy; Copyright 2015, Simplon-Prod.</div>
+	<div class="copyright"><%= Option.all.where(option_key: "text_footer").take.try(:option_value) %></div>
 </footer>
