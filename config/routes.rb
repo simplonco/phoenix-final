@@ -57,6 +57,7 @@ Rails.application.routes.draw do
   #   end
 
   resources :pages
+  resources :options, only: [:create]
   root "pages#index"
 
   get "/maintenance", to: "options#maintenance"

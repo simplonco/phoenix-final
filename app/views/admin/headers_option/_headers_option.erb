@@ -1,4 +1,4 @@
-<form action="/options" method="post">
+<form action="/options" method="post" enctype="multipart/form-data">
 <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
 Title Header:<br>
 <input type="text" name="title_header" value="">
@@ -22,16 +22,20 @@ Logo:<br>
 <input type="file" name="img_header" value="">
 <br><br>
 Couleur de fond du header:<br>
-<input type="color" name="bg_header" value="">
+<input type="color" name="bg_header" value="#ffffff">
 <br><br>
 Couleur du texte du header:<br>
 <input type="color" name="color_header" value="">
 <br><br>
 Couleur de fond du footer:<br>
-<input type="color" name="bg_footer" value="">
+<input type="color" name="bg_footer" value="#ffffff">
 <br><br>
 Couleur du texte du footer:<br>
 <input type="color" name="color_footer" value="">
+<br><br>
+Mode Maintenance:<br>
+<input type="radio" name="mode_maintenance" value="Non" checked>Non
+<input type="radio" name="mode_maintenance" value="Oui">Oui
 <br><br>
 <input type="submit" value="Valider">
 </form>

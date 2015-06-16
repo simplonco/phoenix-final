@@ -28,9 +28,11 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 gem 'devise', '~> 3.4.0'
 
-gem "paperclip", '~> 4.2'
+gem 'paperclip', '~> 4.2'
 
-gem "active_admin-sortable_tree"
+gem 'active_admin-sortable_tree'
+
+gem 'fileutils'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
