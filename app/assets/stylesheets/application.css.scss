@@ -415,12 +415,12 @@ footer .copyright{
 	}
 
 .social-logo li.logo .twitter{
-	background:asset-url('logo-social-twitter.png');
+	background-image:asset-url('logo-social-twitter.png');
 	background-size:cover;
 }
 
 .social-logo li.logo .twitter:hover{
-	background:asset-url('logo-social-twitter-W.png');
+	background-image:asset-url('logo-social-twitter-W.png');
 	background-size:cover;
 }
 
@@ -431,12 +431,12 @@ a.twitter{
 }
 
 .social-logo li.logo .facebook{
-	background:asset-url('facebook.png');
+	background-image:asset-url('facebook.png');
 	background-size:cover;
 }
 
 .social-logo li.logo .facebook:hover{
-	background:asset-url('facebook-W.png');
+	background-image:asset-url('facebook-W.png');
 	background-size:cover;
 }
 
@@ -447,12 +447,12 @@ a.facebook{
 }
 
 .social-logo li.logo .linkedin{
-	background:asset-url('linkedin.png');
+	background-image:asset-url('linkedin.png');
 	background-size:cover;
 }
 
 .social-logo li.logo .linkedin:hover{
-	background:asset-url('linkedin-W.png');
+	background-image:asset-url('linkedin-W.png');
 	background-size:cover;
 }
 
@@ -463,12 +463,12 @@ a.linkedin{
 }
 
 .social-logo li.logo .google-plus{
-	background:asset-url('google.png');
+	background-image:asset-url('google.png');
 	background-size:cover;
 }
 
 .social-logo li.logo .google-plus:hover{
-	background:asset-url('google-W.png');
+	background-image:asset-url('google-W.png');
 	background-size:cover;
 }
 
