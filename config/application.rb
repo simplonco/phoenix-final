@@ -23,6 +23,8 @@ module Phoenix
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
+    config.assets.initialize_on_precompile = false
+
     config.before_configuration do
       I18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{rb,yml}').to_s]
       I18n.locale = :fr
