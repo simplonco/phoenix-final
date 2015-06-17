@@ -7,7 +7,7 @@ class OptionsController < ApplicationController
     if params["img_header"] != nil
       filename = params["img_header"].original_filename 
       new_path = Rails.root + "app/assets/images/" + filename
-      FileUtils.mv(Rails.root + params["img_header"].tempfile.path, new_path)
+      FileUtils.mv(params["img_header"].tempfile.path, new_path)
       params["img_header"] = filename
     end
 
