@@ -415,12 +415,12 @@ footer .copyright{
 	}
 
 .social-logo li.logo .twitter{
-	background:url(/assets/logo-social-twitter.png);
+	background:url(logo-social-twitter.png);
 	background-size:cover;
 }
 
 .social-logo li.logo .twitter:hover{
-	background:url(/assets/logo-social-twitter-W.png);
+	background:url(logo-social-twitter-W.png);
 	background-size:cover;
 }
 
@@ -431,12 +431,12 @@ a.twitter{
 }
 
 .social-logo li.logo .facebook{
-	background:url(/assets/facebook.png);
+	background:url(facebook.png);
 	background-size:cover;
 }
 
 .social-logo li.logo .facebook:hover{
-	background:url(/assets/facebook-W.png);
+	background:url(facebook-W.png);
 	background-size:cover;
 }
 
@@ -447,12 +447,12 @@ a.facebook{
 }
 
 .social-logo li.logo .linkedin{
-	background:url(/assets/linkedin.png);
+	background:url(linkedin.png);
 	background-size:cover;
 }
 
 .social-logo li.logo .linkedin:hover{
-	background:url(/assets/linkedin-W.png);
+	background:url(linkedin-W.png);
 	background-size:cover;
 }
 
@@ -463,12 +463,12 @@ a.linkedin{
 }
 
 .social-logo li.logo .google-plus{
-	background:url(/assets/google.png);
+	background:url(google.png);
 	background-size:cover;
 }
 
 .social-logo li.logo .google-plus:hover{
-	background:url(/assets/google-W.png);
+	background:url(google-W.png);
 	background-size:cover;
 }
 
