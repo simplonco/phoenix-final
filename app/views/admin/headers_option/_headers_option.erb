@@ -25,16 +25,16 @@ Logo:<br>
 <input type="file" name="img_header" value="">
 <br><br>
 Couleur de fond du header:<br>
-<input type="color" name="bg_header" value="#ffffff">
+<input type="color" name="bg_header" value= <%= Option.all.where(option_key: "bg_header").take.try(:option_value) %>>
 <br><br>
 Couleur du texte du header:<br>
-<input type="color" name="color_header" value="">
+<input type="color" name="color_header" value= <%= Option.all.where(option_key: "color_header").take.try(:option_value) %>>
 <br><br>
 Couleur de fond du footer:<br>
-<input type="color" name="bg_footer" value="#ffffff">
+<input type="color" name="bg_footer" value= <%= Option.all.where(option_key: "bg_footer").take.try(:option_value) %>>
 <br><br>
 Couleur du texte du footer:<br>
-<input type="color" name="color_footer" value="">
+<input type="color" name="color_footer" value= <%= Option.all.where(option_key: "color_footer").take.try(:option_value) %>>
 <br><br>
 Mode Maintenance:<br>
 <input type="radio" name="mode_maintenance" value="Non" checked>Non
