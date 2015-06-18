@@ -53,19 +53,19 @@
 
 	<ul class="social-logo">
 		<li class="logo">
-			<%= link_to "", "http://#{Option.all.where(option_key: "link_twitter").take.try(:option_value)}", class: "twitter" %>
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_twitter").take.try(:option_value)}", class: "twitter", :target => '_blank' %>
 		</li>
 		
 		<li class="logo">
-			<%= link_to "", "http://#{Option.all.where(option_key: "link_facebook").take.try(:option_value)}", class: "facebook" %>
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_facebook").take.try(:option_value)}", class: "facebook", :target => '_blank' %>
 		</li>
 		
 		<li class="logo">
-			<%= link_to "", "http://#{Option.all.where(option_key: "link_linkedin").take.try(:option_value)}", class: "linkedin" %>
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_linkedin").take.try(:option_value)}", class: "linkedin", :target => '_blank' %>
 		</li>
 		
 		<li class="logo">
-			<%= link_to "", "http://#{Option.all.where(option_key: "link_google_plus").take.try(:option_value)}", class: "google-plus" %>
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_google_plus").take.try(:option_value)}", class: "google-plus", :target => '_blank' %>
 		</li>
 	</ul>
 	

@@ -1,9 +1,9 @@
 <form action="/options" method="post" enctype="multipart/form-data">
 <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
-Title Header:<br>
+Titre En-tête:<br>
 <input type="text" name="title_header" value="">
 <br><br>
-Texte Footer:<br>
+Texte Pied de page:<br>
 <input type="text" name="text_footer" value="">
 <br><br>
 Twitter:<br>
