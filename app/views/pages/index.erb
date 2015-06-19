@@ -2,7 +2,7 @@
 	color:<%= Option.all.where(option_key: "color_header").take.try(:option_value) %>;">
 	<div class="logo">
 		<a href="#slide_0">
-			<%= Option.all.where(option_key: "img_header").take.try(:option_value) %>
+			<%= image_tag(Option.all.where(option_key: "img_header").take.try(:option_value)) %>
 		</a>
 	</div>
 
