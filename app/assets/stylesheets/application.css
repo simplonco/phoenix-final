@@ -536,7 +536,9 @@ a.google-plus{
 /*--------------- responsive Small devices Tablets ---------------*/
 
  
-/*--------------- responsive Extra small devices Phones ---------------*/
+/*///////////////////////////////////////////////////////////////////
+//////////////// RESPONSIVE EXTRA SMALL DEVICE PHONE ////////////////
+///////////////////////////////////////////////////////////////////*/
 
 @media only screen and (max-width: 768px) {
 	
@@ -686,5 +688,9 @@ a.google-plus{
 	
 	.social-logo:first-child {
   	margin-left: 0px !important;
+	}
+	
+	.slide{
+		  background-position: center;
 	}
 }
