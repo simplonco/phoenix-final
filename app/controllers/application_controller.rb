@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   before_filter :check_maintenance
 
   protected
-
+  
   def check_maintenance
     if Option.all.where(option_key: "mode_maintenance").take.try(:option_value) == "Oui" && request.path != maintenance_path && request.path !~ /admin?/ && request.path !~ /options?/
       redirect_to maintenance_path
