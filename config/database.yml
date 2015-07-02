@@ -31,6 +31,14 @@ development:
   username: phoenix
   password: the_phoenix
 
+production:
+  <<: *default
+  database: phoenix_production
+  adapter: postgresql
+  host: https://simplon-phoenix.herokuapp.com/
+  username: phoenix
+  password: the_phoenix
+
 test:
   <<: *default
   database: phoenix_test

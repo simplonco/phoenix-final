@@ -1,0 +1,44 @@
+<form action="/options" method="post" enctype="multipart/form-data">
+<%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+Titre En-tête:<br>
+<input type="text" name="title_header" value= <%= Option.all.where(option_key: "title_header").take.try(:option_value) %>>
+<br><br>
+Texte Pied de page:<br>
+<input type="text" name="text_footer" value= <%= Option.all.where(option_key: "text_footer").take.try(:option_value) %>>
+<br><br>
+Twitter:<br>
+<input type="text" name="link_twitter" value= <%= Option.all.where(option_key: "link_twitter").take.try(:option_value) %>>
+<br><br>
+Facebook:<br>
+<input type="text" name="link_facebook" value= <%= Option.all.where(option_key: "link_facebook").take.try(:option_value) %>>
+<br><br>
+Linkedin:<br>
+<input type="text" name="link_linkedin" value= <%= Option.all.where(option_key: "link_linkedin").take.try(:option_value) %>>
+<br><br>
+Google +:<br>
+<input type="text" name="link_google_plus" value= <%= Option.all.where(option_key: "link_google_plus").take.try(:option_value) %>>
+<br><br>
+ID Analytics:<br>
+<input type="text" name="id_analytics" value= <%= Option.all.where(option_key: "id_analytics").take.try(:option_value) %>>
+<br><br>
+Logo:<br>
+<input type="file" name="img_header" value= <%= Option.all.where(option_key: "limg_header").take.try(:option_value) %>>
+<br><br>
+Couleur de fond du header:<br>
+<input type="color" name="bg_header" value= <%= Option.all.where(option_key: "bg_header").take.try(:option_value) %>>
+<br><br>
+Couleur du texte du header:<br>
+<input type="color" name="color_header" value= <%= Option.all.where(option_key: "color_header").take.try(:option_value) %>>
+<br><br>
+Couleur de fond du footer:<br>
+<input type="color" name="bg_footer" value= <%= Option.all.where(option_key: "bg_footer").take.try(:option_value) %>>
+<br><br>
+Couleur du texte du footer:<br>
+<input type="color" name="color_footer" value= <%= Option.all.where(option_key: "color_footer").take.try(:option_value) %>>
+<br><br>
+Mode Maintenance:<br>
+<input type="radio" name="mode_maintenance" value="Non" checked>Non
+<input type="radio" name="mode_maintenance" value="Oui">Oui
+<br><br>
+<input type="submit" value="Valider">
+</form>

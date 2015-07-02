@@ -1,20 +1,21 @@
-<header>
+<header style="background-color:<%= Option.all.where(option_key: "bg_header").take.try(:option_value) %>;
+	color:<%= Option.all.where(option_key: "color_header").take.try(:option_value) %>;">
 	<div class="logo">
 		<a href="#slide_0">
-			<%= image_tag("logo.png") %>
+			<%= image_tag(Option.all.where(option_key: "img_header").take.try(:option_value)) %>
 		</a>
 	</div>
 
 	<div class="title">
-		<p>Phoenix</p>
+		<p><%= Option.all.where(option_key: "title_header").take.try(:option_value) %></p>
 	</div>
 
 	<nav>		
-		<div class="navigation">
-			<% @pages.each do |page| %>
+		<% @pages.each do |page| %>
+			<div class="navigation">
 				<%= link_to page.title, "#slide_#{page.position}" %>
-			<% end %>
-		</div>	
+			</div>	
+		<% end %>
 	</nav>
 
 	<div class="back_top">	
@@ -44,6 +45,29 @@
 		    <h3><%= page.subtitle %></h3>
 		    <p style="color:<%= page.color %>;"><%= page.body %></p>
 		</div>
-	
 	</div>
 <% end %>
+
+<footer style="background-color:<%= Option.all.where(option_key: "bg_footer").take.try(:option_value) %>;
+	color:<%= Option.all.where(option_key: "color_footer").take.try(:option_value) %>;">
+
+	<ul class="social-logo">
+		<li class="logo">
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_twitter").take.try(:option_value)}", class: "twitter", :target => '_blank' %>
+		</li>
+		
+		<li class="logo">
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_facebook").take.try(:option_value)}", class: "facebook", :target => '_blank' %>
+		</li>
+		
+		<li class="logo">
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_linkedin").take.try(:option_value)}", class: "linkedin", :target => '_blank' %>
+		</li>
+		
+		<li class="logo">
+			<%= link_to "", "http://#{Option.all.where(option_key: "link_google_plus").take.try(:option_value)}", class: "google-plus", :target => '_blank' %>
+		</li>
+	</ul>
+	
+	<div class="copyright"><%= Option.all.where(option_key: "text_footer").take.try(:option_value) %></div>
+</footer>
