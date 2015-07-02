@@ -2,6 +2,10 @@
 
 # Le projet
 
+#Pré-requis
+
+`sudo apt-get install imagemagick libmagickwand-dev`
+
 # Déploiement : sur Gandi
 
 A tester sur :
