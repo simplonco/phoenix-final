@@ -16,21 +16,21 @@ development:
   database: phoenix_development
   adapter: postgresql
   host: localhost
-  username: phoenix
-  password: the_phoenix
+  username: <%= ENV['DATABASE_USER_NAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
 production:
   <<: *default
   database: phoenix_production
   adapter: postgresql
   host: https://simplon-phoenix.herokuapp.com/
-  username: phoenix
-  password: the_phoenix
+  username: <%= ENV['DATABASE_USER_NAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
 test:
   <<: *default
   database: phoenix_test
   adapter: postgresql
   host: localhost
-  username: phoenix
-  password: the_phoenix
+  username: <%= ENV['DATABASE_USER_NAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
