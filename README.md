@@ -6,10 +6,6 @@
 
 `sudo apt-get install imagemagick libmagickwand-dev`
 
-# Déploiement : sur Gandi
-
-A tester sur :
-
 # Installation
 
 Cloner le projet :
