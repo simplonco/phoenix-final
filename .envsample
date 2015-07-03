@@ -1,0 +1,8 @@
+RACK_ENV=development
+PORT=5000
+
+DATABASE_USER_NAME=yourusername
+DATABASE_PASSWORD=yourpassword
+DATABASE_url=yourdatabaseurl
+
+MAILER_HOST=localhost:3000

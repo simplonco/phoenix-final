@@ -8,10 +8,15 @@ class PagesController < ApplicationController
     	@page = Page.find(params[:id])
   	end
 
+  	def create
+  		@contact = Contact.new(page_params)
+  		@contact.save
+  	end
+
   	private
  
 	def page_params
-		params.require(:page).permit(:title, :subtitle, :body)
+		params.require(:contact).permit(:first_name, :last_name, :mail, :object, :message)
     end
 
 end
