@@ -2,6 +2,7 @@ class PagesController < ApplicationController
 
 	def index
 		@pages = Page.all.order('position')
+    @contacts = Contact.all
 	end
 
 	def show
@@ -11,6 +12,7 @@ class PagesController < ApplicationController
   	def create
   		@contact = Contact.new(page_params)
   		@contact.save
+      redirect_to root_path
   	end
 
   	private

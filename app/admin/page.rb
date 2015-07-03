@@ -3,7 +3,7 @@ ActiveAdmin.register Page do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :list, :of, :attributes, :on, :model, :position, :name, :slug, :title, :subtitle, :body, :color, :text_align, :block_color, :image
+permit_params :list, :of, :attributes, :on, :model, :position, :name, :slug, :title, :subtitle, :body, :color, :text_align, :block_color, :image, :contact
 #
 # or
 #
@@ -59,6 +59,7 @@ form :html => { :enctype => "multipart/form-data" } do |f|
       f.input :text_align, :as => :radio, :collection => ["left", "center", "right"], label: I18n.t('text_align')
       f.input :block_color, :as => :radio, :collection => ["bg_white", "bg_black"], label: I18n.t('block_color')
       f.input :image, :as => :file, label: I18n.t('image')
+      f.input :contact, :as => :radio, :collection => ["off", "on"]
     end
     f.actions
   end

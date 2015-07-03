@@ -22,6 +22,10 @@ class Page < ActiveRecord::Base
 	    if self.block_color.blank? == true 
 	    	self.block_color ||= "bg_white"
 	    end
+
+	    if self.contact.blank? == true 
+	    	self.contact ||= "off"
+	    end
 	  end
 
 end
