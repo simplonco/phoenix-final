@@ -13,6 +13,8 @@ permit_params :list, :of, :attributes, :on, :model, :first_name, :last_name, :ma
 #   permitted
 # end
 
+actions :index
+
 index do
     selectable_column
     id_column
