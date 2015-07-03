@@ -16,11 +16,11 @@ permit_params :list, :of, :attributes, :on, :model, :first_name, :last_name, :ma
 index do
     selectable_column
     id_column
-    column :first_name
-    column :last_name
-    column :mail
-    column :object
-    column :message
+    column I18n.t('activerecord.models.attributes.contact.first_name'), :first_name
+    column I18n.t('activerecord.models.attributes.contact.last_name'), :last_name
+    column I18n.t('activerecord.models.attributes.contact.mail'), :mail
+    column I18n.t('activerecord.models.attributes.contact.object'), :object
+    column I18n.t('activerecord.models.attributes.contact.message'), :message
     actions
   end
 

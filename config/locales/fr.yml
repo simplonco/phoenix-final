@@ -40,6 +40,12 @@ fr:
           color: "Couleur du texte"
           text_align: "Alignement texte"
           block_color: "Couleur de fond du block texte"
+        contact:
+          first_name: "Prénom"
+          last_name: "Nom"
+          mail: "Email"
+          object: "Objet"
+          message: "Message"
   active_admin:
     dashboard: "Tableau de bord"
     dashboard_welcome:
