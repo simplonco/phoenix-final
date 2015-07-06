@@ -208,6 +208,13 @@ ActiveAdmin.setup do |config|
   #     end
   #   end
 
+  config.namespace :admin do |admin|
+    admin.build_menu :utility_navigation do |menu|
+      menu.add label: "My Great Website", url: "https://simplon-phoenix.herokuapp.com/", html_options: { target: :blank }
+      admin.add_logout_button_to_menu menu
+    end
+  end
+
   # == Download Links
   #
   # You can disable download links on resource listing pages,
