@@ -2,7 +2,7 @@ class ContactMailer < ApplicationMailer
 
   def send_mail(contact)
     @contact = contact
-    mail(to: 'hafid.traikzi@gmail.com', from: 'hafid.traikzi@gmail.com')
+    mail(to: 'hafid.traikzi@gmail.com', subject: 'Contact')
   end
 
 end
