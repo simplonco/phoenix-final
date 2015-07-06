@@ -14,7 +14,7 @@ class PagesController < ApplicationController
 		@contact = Contact.new(page_params)
 		@contact.save
     ContactMailer.send_mail(@contact).deliver_now
-    redirect_to root_path
+    redirect_to root_path, notice: "Message envoyé"
 	end
 
 	private

@@ -42,15 +42,16 @@
 		<% end %>
 		<% if page.contact != "off" %>
 			<div class="block_texte <%= page.text_align %> <%= page.block_color %>">
-			<%= form_for :contact do |f| %>
-			  Prénom : <br /><%= f.text_field :first_name %><br />
-			  Nom : <br /><%= f.text_field :last_name %><br />
-			  Mail : <br /><%= f.text_field :mail %><br />
-			  Objet : <br /><%= f.text_field :object %><br />
-			  Message : <br /><%= f.text_area :message, rows: 5  %><br />
-			  <%= f.submit("Envoyer") %> 
+				<%= form_for :contact do |f| %>
+				  Prénom : <br /><%= f.text_field :first_name %><br />
+				  Nom : <br /><%= f.text_field :last_name %><br />
+				  Mail : <br /><%= f.text_field :mail %><br />
+				  Objet : <br /><%= f.text_field :object %><br />
+				  Message : <br /><%= f.text_area :message, rows: 5  %><br />
+				  <%= f.submit("Envoyer") %>
+				  <p class="erase"><%= flash[:notice] %></p>
+				<% end %>
 			</div>
-		<% end %>
 		<% else %>
 			<div class="block_texte <%= page.text_align %> <%= page.block_color %>">
 				<h1><%= page.title %></h1>
