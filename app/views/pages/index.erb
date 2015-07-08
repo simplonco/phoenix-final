@@ -43,7 +43,7 @@
 				</a>
 			</div>
 		<% end %>
-		<% if page.contact == "contact" %>
+		<% if page.contact == "formulaire de contact" %>
 			<div class="block_texte <%= page.text_align %> <%= page.block_color %>">
 				<%= form_for :contact do |f| %>
 				  Prénom : <br /><%= f.text_field :first_name %><br />
