@@ -16,6 +16,8 @@ fr:
   text_align: "Alignement texte (choisissez un alignement)"
   block_color: "Couleur de fond du block texte (choisissez une couleur)"
   image: "Image/Photo (selectionnez une image/photo)"
+  title_map: "Titre de la map"
+  adress_map: "Adresse de la map"
   activerecord:
     models:
       admin_user:

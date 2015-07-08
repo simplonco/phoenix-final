@@ -40,7 +40,7 @@
 				</a>
 			</div>
 		<% end %>
-		<% if page.contact != "off" %>
+		<% if page.contact == "contact" %>
 			<div class="block_texte <%= page.text_align %> <%= page.block_color %>">
 				<%= form_for :contact do |f| %>
 				  Prénom : <br /><%= f.text_field :first_name %><br />
@@ -52,6 +52,8 @@
 				  <p class="erase"><%= flash[:notice] %></p>
 				<% end %>
 			</div>
+		<% elsif page.contact == "map" %>
+			<div id='map' data-title-map="<%= page.title_map %>" data-adress-map="<%= page.adress_map %>"></div>
 		<% else %>
 			<div class="block_texte <%= page.text_align %> <%= page.block_color %>">
 				<h1><%= page.title %></h1>

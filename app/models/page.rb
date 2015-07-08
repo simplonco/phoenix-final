@@ -24,7 +24,7 @@ class Page < ActiveRecord::Base
 	    end
 
 	    if self.contact.blank? == true 
-	    	self.contact ||= "off"
+	    	self.contact ||= "slide"
 	    end
 	  end
 
