@@ -26,6 +26,8 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
+  config.serve_static_assets = true
+
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
@@ -85,7 +87,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
-  domain:               'example.com',
+  domain:               'https://simplon-phoenix.herokuapp.com/',
   user_name:            ENV['MAIL_USER_NAME'],
   password:             ENV['MAIL_PASSWORD'],
   authentication:       'plain',
