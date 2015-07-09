@@ -25,7 +25,6 @@ ready = function() {
 		}
 
 	})
-	//var map = L.mapbox.map('map', 'mapbox.streets').setView([48.855, 2.4], 8);
 	
 };
 
