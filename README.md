@@ -53,3 +53,7 @@ Pour afficher la liste des utilisateurs `\dgh`
 ## Pour lancer les tests :
 
 bundle exec rake test
+
+## Pour accéder au système d'administration :
+
+Ajoutez `/admin` à l'url présente de la page web 
