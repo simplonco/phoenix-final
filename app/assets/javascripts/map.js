@@ -43,7 +43,7 @@ function initMap() {
 		    else if (data.latlng) {
 		        map.setView([data.latlng[0], data.latlng[1]], 13);
 		    }
-		    console.log(data);
+		    
 		    var marker = L.marker([data.latlng[0], data.latlng[1]]).addTo(map);
 
 		    marker.bindPopup(adress.getAttribute("data-title-map") +"<br>"+ adress.getAttribute("data-adress-map"));
