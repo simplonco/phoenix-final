@@ -3,7 +3,7 @@ ActiveAdmin.register Page do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :list, :of, :attributes, :on, :model, :position, :name, :slug, :title, :subtitle, :body, :color, :text_align, :block_color, :image, :contact, :title_map, :adress_map
+permit_params :list, :of, :attributes, :on, :model, :position, :name, :slug, :title, :subtitle, :body, :color, :text_align, :block_color, :image, :contact, :title_map, :adress_map, :video
 #
 # or
 #
@@ -59,9 +59,10 @@ form :html => { :enctype => "multipart/form-data" } do |f|
       f.input :text_align, :as => :radio, :collection => ["left", "center", "right"], label: I18n.t('text_align')
       f.input :block_color, :as => :radio, :collection => ["bg_white", "bg_black"], label: I18n.t('block_color')
       f.input :image, :as => :file, label: I18n.t('image')
-      f.input :contact, :as => :radio, :collection => ["slide", "formulaire de contact", "map"]
+      f.input :contact, :as => :radio, :collection => ["slide", "formulaire de contact", "map", "video"]
       f.input :title_map, label: I18n.t('title_map'), placeholder: "Entrer un titre pour la map"
       f.input :adress_map, label: I18n.t('adress_map'), placeholder: "Entrer une adresse pour la map"
+      f.input :video, placeholder: "Entrer une adresse pour la video"
     end
     f.actions
   end

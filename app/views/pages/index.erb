@@ -57,6 +57,8 @@
 			</div>
 		<% elsif page.contact == "map" %>
 			<div id="map-<%= page.position %>" class="map" data-title-map="<%= page.title_map %>" data-adress-map="<%= page.adress_map %>"></div>
+		<% elsif page.contact == "video" %>
+			<div id="embed-<%= page.position %>" class="video" data-link-video="<%= page.video %>"></div>
 		<% else %>
 			<div class="block_texte <%= page.text_align %> <%= page.block_color %>">
 				<h1><%= page.title %></h1>
