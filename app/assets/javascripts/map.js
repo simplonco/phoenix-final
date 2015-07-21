@@ -31,7 +31,7 @@ function initMap() {
 		var geocoder = L.mapbox.geocoder('mapbox.places');
 		var adress = document.getElementById($(this).attr('id'));
 	
-		geocoder.query(adress.getAttribute("data-adress-map"), showMap);
+		geocoder.query(adress.getAttribute("data-adress-map").split(",")[0], showMap);
 
 		function showMap(err, data) {
 		    // The geocoder can return an area, like a city, or a
