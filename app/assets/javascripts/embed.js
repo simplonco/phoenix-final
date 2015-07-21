@@ -56,7 +56,7 @@ ready = function() {
 
 		var myId = getIdVimeo(embed.getAttribute("data-link-video"));
 
-		$("#" + $(this).attr('id')).html('<iframe width="640" height="480" src="//player.vimeo.com/video/' + myId + '" frameborder="0" allowfullscreen></iframe>');
+		$("#" + $(this).attr('id')).html('<iframe src="//player.vimeo.com/video/' + myId + '" frameborder="0" allowfullscreen></iframe>');
 		
 		}
 
@@ -75,7 +75,7 @@ ready = function() {
 
 		var myId = getIdDailymotion(embed.getAttribute("data-link-video"));
 
-		$("#" + $(this).attr('id')).html('<iframe width="640" height="480" src="//www.dailymotion.com/embed/' + myId + '" frameborder="0" allowfullscreen></iframe>');
+		$("#" + $(this).attr('id')).html('<iframe src="//www.dailymotion.com/embed/' + myId + '" frameborder="0" allowfullscreen></iframe>');
 		
 		}
 	});
