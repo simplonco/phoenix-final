@@ -41,25 +41,6 @@ ready = function() {
 		
 		} 
 
-		else if (embed.getAttribute("data-link-video") == getIdDailymotion(embed.getAttribute("data-link-video"))) {
-
-		function getIdDailymotion(url) {
-		    var regExp = /^.*(dailymotion.com\/|v\/|u\/\w\/|embed\/|video\?v=|\&v=)([^#\&\?]*).*/;
-		    var match = url.match(regExp);
-
-		    if (match && match[2].length) {
-		        return match[2];
-		    } else {
-		        return 'error';
-		    }
-		}
-
-		var myId = getIdDailymotion(embed.getAttribute("data-link-video"));
-
-		$("#" + $(this).attr('id')).html('<iframe width="640" height="480" src="//www.dailymotion.com/embed/' + myId + '" frameborder="0" allowfullscreen></iframe>');
-		
-		}
-
 		else if (embed.getAttribute("data-link-video") == "https://vimeo.com/" + getIdVimeo(embed.getAttribute("data-link-video"))) {
 
 		function getIdVimeo(url) {
@@ -76,6 +57,25 @@ ready = function() {
 		var myId = getIdVimeo(embed.getAttribute("data-link-video"));
 
 		$("#" + $(this).attr('id')).html('<iframe width="640" height="480" src="//player.vimeo.com/video/' + myId + '" frameborder="0" allowfullscreen></iframe>');
+		
+		}
+
+		else {
+
+		function getIdDailymotion(url) {
+		    var regExp = /^.*(dailymotion.com\/|v\/|u\/\w\/|embed\/|video\?v=|\&v=)([^#\&\?]*).*/;
+		    var match = url.match(regExp);
+
+		    if (match && match[2].length) {
+		        return match[2];
+		    } else {
+		        return 'error';
+		    }
+		}
+
+		var myId = getIdDailymotion(embed.getAttribute("data-link-video"));
+
+		$("#" + $(this).attr('id')).html('<iframe width="640" height="480" src="//www.dailymotion.com/embed/' + myId + '" frameborder="0" allowfullscreen></iframe>');
 		
 		}
 	});
