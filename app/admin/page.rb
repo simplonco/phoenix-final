@@ -13,13 +13,6 @@ permit_params :list, :of, :attributes, :on, :model, :position, :name, :slug, :ti
 #   permitted
 # end
 
-sortable
-
-index :as => :sortable do
-    label :title
-    actions
-  end
-
 index do
     selectable_column
     id_column
@@ -32,6 +25,13 @@ index do
     column I18n.t('activerecord.models.attributes.page.color'), :color
     column I18n.t('activerecord.models.attributes.page.text_align'), :text_align
     column I18n.t('activerecord.models.attributes.page.block_color'), :block_color
+    actions
+  end
+
+sortable
+
+index :as => :sortable do
+    label :title
     actions
   end
 
